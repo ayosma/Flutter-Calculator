@@ -62,11 +62,14 @@ class _CalculatorHomePageState extends State<CalculatorHomePage> {
 
   Widget buildButton(String text) {
     return Expanded(
-      child: OutlinedButton(
-        onPressed: () => buttonPressed(text),
-        child: Text(
-          text,
-          style: TextStyle(fontSize: 20),
+      child: Padding(
+        padding: const EdgeInsets.all(4.0),
+        child: ElevatedButton(
+          onPressed: () => buttonPressed(text),
+          child: Text(
+            text,
+            style: TextStyle(fontSize: 20),
+          ),
         ),
       ),
     );
