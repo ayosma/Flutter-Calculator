@@ -7,9 +7,11 @@ void main() {
 class FlutterCalculatorApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Calculator',
-      home: CalculatorHomePage(),
+   return MaterialApp(
+  title: 'Flutter Calculator',
+  darkTheme: ThemeData.dark(), 
+  themeMode: ThemeMode.dark, 
+  home: CalculatorHomePage(),
     );
   }
 }
